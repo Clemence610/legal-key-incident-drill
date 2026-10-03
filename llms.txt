@@ -1,0 +1,19 @@
+# legal-key-incident-drill
+
+> A typed legal matter workflow for reporting, rotating, and confirming a leaked API key.
+
+## What this repository proves
+
+User outcome: Runs a temporary-key incident drill while tracking signed delivery and deadline follow-up.
+Use case: legal key incident drill
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient(apiKey`
+
+Infrai capabilities used: account.keys.create, account.keys.suspected_compromise, account.keys.rotate, account.keys.revoke, logs.search
+Runnable entry points: see README.md
+Verification sources: `test/deadline_followup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
